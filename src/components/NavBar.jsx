@@ -1,4 +1,5 @@
-import { NavLink} from "react-router-dom";
+import { NavLink } from "react-router-dom";
+
 function NavBar() {
   return (
     <div className="navbar-default navbar navbar-fixed-top">
@@ -19,13 +20,16 @@ function NavBar() {
         <div id="navbar-main" className="navbar-collapse collapse">
           <ul className="nav navbar-nav">
             <li>
-            <NavLink to={"about"}>Hakkında</NavLink> 
+              <NavLink to="about">Hakkında</NavLink>
             </li>
-        
+            <li>
+              <NavLink to="login">Login</NavLink> {}
+            </li>
           </ul>
         </div>
       </div>
     </div>
   );
 }
+
 export default NavBar;
